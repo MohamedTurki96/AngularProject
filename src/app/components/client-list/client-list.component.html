@@ -1,0 +1,13 @@
+<form style="border: 1px solid #ccc">
+  <h1>Create client</h1>
+  <hr />
+
+  <label for="Name"><b>Name</b></label>
+
+  <input formControlName="displayName" type="text" [(ngModel)]="clients" placeholder="Enter Name" name="name" required/>
+
+  <label for="LastName"><b>LastName</b></label>
+
+  <input formControlName="displayName" type="text" placeholder="Enter Name" name="lastname" required/>
+  <button type="submit" class="signupbtn">create</button>
+</form>

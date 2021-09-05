@@ -1,0 +1,23 @@
+#container {
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px 5px yellow;
+}
+table {
+  width: 100%;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+th,
+td {
+  padding: 12px;
+}
+thead {
+  background-color: green;
+  color: aliceblue;
+}
+tbody tr {
+  background-color: whitesmoke;
+}

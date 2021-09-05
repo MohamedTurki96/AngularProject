@@ -1,0 +1,24 @@
+<div id="container">
+    <table>
+        <thead>
+            <th>id</th>
+            <th>name</th>
+            <th>gender</th>
+        </thead>
+        <tbody *ngIf="users.length >0 ;else showImage" >
+            <tr :key="user.id" *ngFor="let user of users">
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.gender}}</td>
+            </tr>
+        </tbody>
+        <tbody >
+            <ng-template #showImage>
+                <div>
+                    <img src="../../../assets/empty.svg"/>
+                </div>
+            </ng-template>
+        </tbody>
+    </table>
+</div>
+<app-client-list></app-client-list> 
